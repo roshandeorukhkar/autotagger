@@ -47,3 +47,7 @@ jobs:
       - run:
           name: Firebase Deploy
           command: ./node_modules/.bin/firebase deploy --token=1/eTP0-HF7AeDu1BdurG8Sw-fMq7bPoeXomPgusEeWnf8
+
+      - run:
+          name: Firebase Deploy
+          command: ./node_modules/.bin/firebase serve --token=1/eTP0-HF7AeDu1BdurG8Sw-fMq7bPoeXomPgusEeWnf8
