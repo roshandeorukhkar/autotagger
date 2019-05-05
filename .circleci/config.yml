@@ -39,10 +39,10 @@ jobs:
       - run:
          name: Gatsby Build
          command: ./node_modules/.bin/gatsby build
-      
+
       - run:
           name: Firebase Select Project
-          command: ./node_modules/.bin/firebase use --add autotagger-11064
+          command: ./node_modules/.bin/firebase use --add autotagger-11064  --token=1/eTP0-HF7AeDu1BdurG8Sw-fMq7bPoeXomPgusEeWnf8
 
       - run:
           name: Firebase Deploy
