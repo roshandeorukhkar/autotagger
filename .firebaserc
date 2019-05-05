@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "development": "gatsby-starter-shopify-app",
+    "default": "autotagger-11064"
+  }
+}
