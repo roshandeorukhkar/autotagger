@@ -42,8 +42,8 @@ jobs:
       
       - run:
           name: Firebase Select Project
-          command: ./node_modules/.bin/firebase deploy --token=1/eTP0-HF7AeDu1BdurG8Sw-fMq7bPoeXomPgusEeWnf8
+          command: ./node_modules/.bin/firebase use --add autotagger-11064
 
       - run:
           name: Firebase Deploy
-          command: ./node_modules/.bin/firebase use --add autotagger-11064
+          command: ./node_modules/.bin/firebase deploy --token=1/eTP0-HF7AeDu1BdurG8Sw-fMq7bPoeXomPgusEeWnf8
