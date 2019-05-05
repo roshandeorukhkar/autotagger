@@ -1,6 +1,6 @@
 {
   "name": "gatsby-starter-shopify-app",
-  "private": true,
+  "private": false,
   "description": "A Gatsby Starter to create a Shopify App",
   "version": "0.0.1",
   "author": "Gil Greenberg <gilgreenberg@gmail.com>",
