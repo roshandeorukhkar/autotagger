@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import { Layout, Page } from "@shopify/polaris"
 
-import StoreInfo from "./store-info"
+import TagList from "./TagList"
 
 class App extends Component {
     render = () => {
@@ -11,7 +11,7 @@ class App extends Component {
             >
                 <Layout>
                     <Layout.Section>
-                        <StoreInfo location={this.props.location} />
+                        <TagList location={this.props.location} />
                     </Layout.Section>
                 </Layout>
             </Page>

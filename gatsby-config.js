@@ -46,7 +46,7 @@ module.exports = {
     app.use(
       "/auth",
       proxy({
-        target: "http://localhost:5001",
+        target: "http://localhost:5000",
         pathRewrite: {
           "/auth": `/${FIREBASE_PROJECT_ID}/${FIREBASE_APP_ZONE || 'us-central1'}/auth`,
         },
@@ -58,7 +58,7 @@ module.exports = {
     app.use(
       "/callback",
       proxy({
-        target: "http://localhost:5001",
+        target: "http://localhost:5000",
         pathRewrite: {
           "/callback": `/${FIREBASE_PROJECT_ID}/${FIREBASE_APP_ZONE || 'us-central1'}/callback`,
         },
@@ -68,7 +68,7 @@ module.exports = {
     app.use(
       "/api/graphql",
       proxy({
-        target: "http://localhost:5001",
+        target: "http://localhost:5000",
         pathRewrite: {
           "/api/graphql": `/${FIREBASE_PROJECT_ID}/${FIREBASE_APP_ZONE || 'us-central1'}/graphql`,
         },
@@ -78,7 +78,7 @@ module.exports = {
     app.use(
       "/api/activate-charge",
       proxy({
-        target: "http://localhost:5001",
+        target: "http://localhost:5000",
         pathRewrite: {
           "/api/activate-charge": `/${FIREBASE_PROJECT_ID}/${FIREBASE_APP_ZONE || 'us-central1'}/activateCharge`,
         },
@@ -88,7 +88,7 @@ module.exports = {
     app.use(
       "/webhook/uninstall",
       proxy({
-        target: "http://localhost:5001",
+        target: "http://localhost:5000",
         pathRewrite: {
           "/webhook/uninstall": `/${FIREBASE_PROJECT_ID}/${FIREBASE_APP_ZONE || 'us-central1'}/webhookUninstall`,
         },
@@ -98,7 +98,7 @@ module.exports = {
     app.use(
       "/webhook/customer-redact",
       proxy({
-        target: "http://localhost:5001",
+        target: "http://localhost:5000",
         pathRewrite: {
           "/webhook/customer-redact": `/${FIREBASE_PROJECT_ID}/${FIREBASE_APP_ZONE || 'us-central1'}/webhookCustomerRedact`,
         },
@@ -108,7 +108,7 @@ module.exports = {
     app.use(
       "/webhook/customers-data-request",
       proxy({
-        target: "http://localhost:5001",
+        target: "http://localhost:5000",
         pathRewrite: {
           "/webhook/customers-data-request": `/${FIREBASE_PROJECT_ID}/${FIREBASE_APP_ZONE || 'us-central1'}/webhookCustomersDataRequest`,
         },
@@ -118,7 +118,7 @@ module.exports = {
     app.use(
       "/webhook/shop-redact",
       proxy({
-        target: "http://localhost:5001",
+        target: "http://localhost:5000",
         pathRewrite: {
           "/webhook/shop-redact": `/${FIREBASE_PROJECT_ID}/${FIREBASE_APP_ZONE || 'us-central1'}/webhookShopRedact`,
         },
